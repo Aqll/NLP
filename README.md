@@ -1,3 +1,4 @@
+# Note: This is a copy of my own work from a private repo.
 
 # How to install any libraries that are needed and for which you have the approval of the instructor.
 
