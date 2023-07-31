@@ -1,6 +1,6 @@
 #### Note: This is a copy of my own work initially developed private repo.
 
-# How to install any libraries that are needed and for which you have the approval of the instructor.
+# How to install any libraries that are needed.
 
 1. Install python NLTK library using the following command in the terminal/bash shell:
 >>>python3 -m pip install nltk
