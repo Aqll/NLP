@@ -30,6 +30,9 @@ The main objective of this project is to create a simple and efficient text clas
 
 ### Algorithms:
 1. **Naive Bayes Classifier:** The main algorithm used in this project is the Naive Bayes Classifier, which is a probabilistic machine learning algorithm. It leverages Bayes' theorem and makes the naive assumption of independence among features given the class label. The classifier calculates the posterior probability of each class given the input text and selects the class with the highest probability as the predicted class.
+2. **k-Nearest Neighbors (kNN):** The k-Nearest Neighbors algorithm is another essential algorithm employed in the text classifier project. It is a non-parametric and instance-based learning algorithm used for classification tasks. In kNN, the class of a data point is determined by the majority class among its k nearest neighbors in the feature space. The distance metric used (e.g., Euclidean distance) plays a crucial role in finding the nearest neighbors.
+
+
 
 ### Optimization:
 1. **Multinomial Naive Bayes:** We use the Multinomial Naive Bayes variant, which is specifically suited for text classification tasks, as it works well with discrete features like word counts. This variant is optimized for handling text data and efficiently computing probabilities for multiple classes.
