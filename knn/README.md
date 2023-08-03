@@ -42,6 +42,3 @@ The goal of hyperparameter tuning is to find the k value that maximizes the mode
 Based on these results, further analysis can be conducted to enhance the classification performance. Some potential steps include:
 - Investigate classes with low F1 scores to understand potential challenges in classification.
 - Consider using techniques like feature selection, data augmentation, or other algorithms to improve classification performance.
-
-
-Please note that this summary is based on the provided results, and further insights and interpretations can be obtained by analyzing the complete dataset and the model's architecture. The results can guide future improvements to enhance the model's accuracy and overall performance.
