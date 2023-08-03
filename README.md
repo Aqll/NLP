@@ -8,8 +8,8 @@ This project implements a Naive Bayes classifier for text classification tasks. 
 
 <img align="left" width = 430 src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Naive_Bayes_Classifier.gif"/>  
 
-<img align="right" height=350 src="https://importq.files.wordpress.com/2017/11/knn_mov5.gif?w=640&zoom=2"/>  
-<p></p>
+<img align="right" height=350 width = 450 src="https://importq.files.wordpress.com/2017/11/knn_mov5.gif?w=640&zoom=2"/>  
+
 
 ## Objective
 
