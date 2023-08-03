@@ -96,7 +96,7 @@ The first argument is the path to the knn create model program, the next argumen
 The first argument is the path to the knn inference program, the next arguments: path to a TSV file with vectors computed as in the previous step, a value k, a path to a JSON test file like the one provided.
 >>>python3 ./knn/knn_inference.py ./bbc_doc_vectors.tsv 11 ./data/test.json
 
-## A discussion of which errors your programs detect and how these errors are handled.
+## A discussion of which errors the program detects and how these errors are handled.
 
 1. For all the tasks, the program detects and print error messages if the program is called with a wrong number of arguments.
 2. For all the tasks where a file is written as output, the program asks the user for confirmation before overwriting the file if the file already existed.
