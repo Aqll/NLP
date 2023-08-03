@@ -1,7 +1,48 @@
 
 # Text Classification Project
 
-This is a text classification project that implements two classifiers: Naive Bayes Classifier and k-Nearest Neighbors (k-NN) Classifier. The project allows you to train the classifiers on a given dataset, perform feature selection, and then use the trained models for text classification on new data.
+## Overview
+
+This project implements a Naive Bayes classifier for text classification tasks. The Naive Bayes classifier is a popular machine learning algorithm used in natural language processing and text classification. It makes the assumption of independence among features, which simplifies the classification process. The project provides functionalities to train the classifier on labeled text data and perform text classification on new data using the trained model.
+
+## Objective
+
+The main objective of this project is to create a simple and efficient text classification tool based on the Naive Bayes algorithm. The specific objectives are as follows:
+
+- Develop a robust Naive Bayes classifier that can handle both binary and multiclass classification tasks.
+- Preprocess and tokenize text data to create feature vectors suitable for classification.
+- Train the classifier on labeled text data to learn the underlying patterns in the data.
+- Provide an easy-to-use interface for users to perform text classification on new data using the trained classifier.
+- Evaluate the performance of the classifier using various metrics to assess its accuracy and effectiveness.
+
+## Features
+
+- Train a Naive Bayes classifier on labeled text data.
+- Perform text classification on new data using the trained classifier.
+- Evaluate the classifier's performance using various metrics.
+- Tokenize and preprocess text data to create feature vectors.
+- Handle both binary and multiclass classification tasks.
+
+## Details on Data Structures, Algorithms, and Optimization
+
+### Data Structures:
+1. **Feature Vectors:** The text data is preprocessed and tokenized to create feature vectors. These feature vectors represent the words and their frequencies in the text. We use Python dictionaries to efficiently store these feature vectors, where each word corresponds to a key, and its frequency in the text is the value.
+
+### Algorithms:
+1. **Naive Bayes Classifier:** The main algorithm used in this project is the Naive Bayes Classifier, which is a probabilistic machine learning algorithm. It leverages Bayes' theorem and makes the naive assumption of independence among features given the class label. The classifier calculates the posterior probability of each class given the input text and selects the class with the highest probability as the predicted class.
+
+### Optimization:
+1. **Multinomial Naive Bayes:** We use the Multinomial Naive Bayes variant, which is specifically suited for text classification tasks, as it works well with discrete features like word counts. This variant is optimized for handling text data and efficiently computing probabilities for multiple classes.
+
+2. **Sparse Representation:** Since the text data typically contains a large number of unique words, most feature vectors are sparse, i.e., most entries are zero. To optimize memory usage and computational efficiency, we use sparse representations of feature vectors, which only store the non-zero elements.
+
+3. **Log Probabilities:** To prevent underflow issues that can arise when multiplying probabilities, we work with log probabilities. Since probabilities are small numbers, they can lead to numerical instability when multiplied repeatedly. By converting probabilities to log space and performing additions instead of multiplications, we can avoid underflow and maintain numerical stability.
+
+4. **Vectorization:** To speed up computations, we utilize vectorized operations from libraries like NumPy. Vectorized operations allow us to perform computations on entire arrays of data at once, leading to significant performance improvements compared to using traditional loops.
+
+5. **Data Preprocessing:** Efficient data preprocessing techniques, such as tokenization, stop-word removal, and word stemming, are employed to clean the text data and reduce the feature space, leading to faster training and inference times.
+
+These data structures, algorithms, and optimization techniques contribute to the overall efficiency and effectiveness of the Naive Bayes Text Classification project. By carefully choosing appropriate data structures and applying optimization strategies, the classifier can handle large text datasets and provide reliable predictions efficiently.
 
 ## Files
 
@@ -15,7 +56,7 @@ The repository contains the following files:
 - `data/`: Directory containing sample training and testing data.
 
 
-# How to install any libraries that are needed.
+## How to install any libraries that are needed.
 
 1. Install python NLTK library using the following command in the terminal/bash shell:
 >>>python3 -m pip install nltk
@@ -25,7 +66,7 @@ The repository contains the following files:
 >>>import nltk
 >>>nltk.download('stopwords')
 
-# Instructions on how to the your programs, including example showing all parameters.
+## Instructions on how to run, including example showing all parameters.
 
 1. Running of the nbc training program. 
 
@@ -52,20 +93,8 @@ The first argument is the path to the knn create model program, the next argumen
 The first argument is the path to the knn inference program, the next arguments: path to a TSV file with vectors computed as in the previous step, a value k, a path to a JSON test file like the one provided.
 >>>python3 ./knn/knn_inference.py ./bbc_doc_vectors.tsv 11 ./data/test.json
 
-# A discussion of which errors your programs detect and how these errors are handled.
+## A discussion of which errors your programs detect and how these errors are handled.
 
-1. For all the tasks, my program detects and print error messages if the program is called with a wrong number of arguments.
-2. For all the tasks where a file is written as output, my program asks the user for confirmation before overwriting the file if the file already existed.
-3. For all the tasks requiring a file as input, my program detects and print error messages if the program is called with an invalid path to a file. 
-
-
-# Details on data structures, algorithms, and optimisation: 
-
-Throughout my programs for all tasks, I have written comments on the functionality of the code, and meaning of the variables. The design of my code is easier to read, maintain, and debug. I've used dictionaries, including nested dictionaries, in all my programs to store/read information since it is much more efficient rather than looping through a list of lists.
-
-# Resources consulted:
-
-https://stackoverflow.com/questions/40496518/how-to-get-the-3-items-with-the-highest-value-from-dictionary
-https://stackoverflow.com/questions/988228/convert-a-string-representation-of-a-dictionary-to-a-dictionary
-
-#### Note: This is a copy of my own work initially developed private repo.
+1. For all the tasks, the program detects and print error messages if the program is called with a wrong number of arguments.
+2. For all the tasks where a file is written as output, the program asks the user for confirmation before overwriting the file if the file already existed.
+3. For all the tasks requiring a file as input, the program detects and print error messages if the program is called with an invalid path to a file. 
