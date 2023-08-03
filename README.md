@@ -5,6 +5,13 @@
 
 This project implements a Naive Bayes classifier for text classification tasks. The Naive Bayes classifier is a popular machine learning algorithm used in natural language processing and text classification. It makes the assumption of independence among features, which simplifies the classification process. The project provides functionalities to train the classifier on labeled text data and perform text classification on new data using the trained model.
 
+
+<img align="left" src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Naive_Bayes_Classifier.gif"/>  
+
+<img align="right" height=375 src="https://editor.analyticsvidhya.com/uploads/23385Capture6.PNG"/>  
+
+
+
 ## Objective
 
 The main objective of this project is to create a simple and efficient text classification tool based on the Naive Bayes algorithm. The specific objectives are as follows:
